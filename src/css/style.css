@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif, helvetica;
+    background-image: url('../imagens/churrasco.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(62, 59, 59, 0.8);
+    margin: 20px 18px;
+    padding: 10px 18px ;
+    box-shadow: 0 0 300px rgba(249, 173, 50, 0.718);
+    border-radius: 15px;
+    max-width: 310px;
+    border: solid 2px rgb(255, 181, 53);
+    
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 29px;
+    margin: 0px 18px;
+    font-family: "Playwrite US Trad", cursive;
+    text-shadow: 2px 2px 5px #000000;
+}
+h1 sup{
+    font-size: 9px;
+    font-family: "Roboto", sans-serif;
+    
+    
+}
+h2 {
+    text-align: center;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.input-group {
+    margin: 7px;
+    
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 181, 53);
+    background-color: rgba(38, 36, 36, 0.612);
+    color: white;
+    
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    margin-left: 20px;
+    
+    
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ffffff;
+    
+    width: calc(50% - 10px); /* Ajusta a largura para caber dois checkboxes por linha */
+    text-shadow: 3px 2px 5px #f6b321da;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button button {
+    padding: 7px 15px;
+    
+    font-family: "Roboto", sans-serif;
+    background-color: #766230;
+    border: solid 1px rgb(255, 181, 53);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button button:hover {
+    background-color: #715b1e;
+    color: #ffff98;
+}   
+
+.result {
+    
+    margin-top: 7px;
+    margin-left: 57px;
+    
+}
+
+.result p {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+/* Esconde o checkbox padrão */
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Estiliza o elemento span que substitui o checkbox */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    
+}
+
+.custom-checkbox .checkmark {
+    width: 20px; /* Tamanho do checkbox */
+    height: 20px; /* Tamanho do checkbox */
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo */
+    border: 2px solid rgb(202, 147, 53); /* Cor da borda */
+    border-radius: 4px; /* Bordas arredondadas, opcional */
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Estilo quando o checkbox está marcado */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #776431; /* Cor de fundo quando marcado */
+    border-color: #f8dc87; /* Cor da borda quando marcado */
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Estilo do ícone de marcação */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+
